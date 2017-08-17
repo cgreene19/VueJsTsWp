@@ -1,0 +1,31 @@
+{
+  "name": "js-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w | live-server | webpack --watch",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "serve": "live-server",
+    "build:dev": "webpack --progress",
+    "postinstall": "typings install"
+  },
+  "author": "cid.greene@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.5.1",
+    "d3": "^4.10.0",
+    "typings": "^2.1.1",
+    "vue": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/d3": "^4.10.0",
+    "@types/es6-shim": "^0.31.34",
+    "@types/vue": "^2.0.0",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "typings": "^2.1.1",
+    "webpack": "^3.5.4"
+  }
+}
