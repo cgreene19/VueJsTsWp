@@ -3,7 +3,7 @@ import Vue from "vue";
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'This is the main app entry point.'
+        message: 'This is the main app entry point. Yes'
     }
 });
 
