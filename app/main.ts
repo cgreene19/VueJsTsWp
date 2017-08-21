@@ -1,31 +1,42 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import details from "./components/details.vue";
+import aboutMe from "./components/aboutMe.vue";
+import jsBrowser from "./components/jsBrowser.vue";
+import itemNav from "./components/objectMenu";
 
 // import UserView from './components/UserView.vue'
 
 
-Vue.component('item-nav', {
-    template: `<ul>
-        <li v-for="i in items ">{{i}}</li>    
-    </ul>`,
-    data: function () {
-        return {
-            items: ['Object', 'Array', 'Reflect', 'Proxy', 'Promise']
-        }
-    }
+// const itemNav = Vue.component('item-nav', {
+//     template: `<ul>
+//         <li v-for="i in items ">{{i}}</li>    
+//     </ul>`,
+//     data: function () {
+//         return {
+//             items: ['Object', 'Array', 'Reflect', 'Proxy', 'Promise']
+//         }
+//     }
 
-});
+// });
 
 Vue.use(VueRouter);
 const routes = [
-    { path: '/foo', component: details },
-    
-  ]
-  
+    {
+        path: '/jsbrowser', component: jsBrowser,
+        children: [
+            {
+                path: 'profile',
+                component: itemNav
+            },]
+    },
+    { path: '/', component: jsBrowser },
+    { path: '/aboutme', component: aboutMe },
+
+]
+
 const router = new VueRouter({
     routes // short for `routes: routes`
-  });
+});
 
 //   const app = new Vue({
 //     el: '#app',
@@ -35,9 +46,9 @@ const router = new VueRouter({
 // });
 
 const app = new Vue({
-    el: '#app',    
+    el: '#app',
     router,
-        data: {
+    data: {
         laung: 'js'
     }
 }).$mount();
