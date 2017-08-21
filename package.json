@@ -25,10 +25,13 @@
     "@types/d3": "^4.10.0",
     "@types/es6-shim": "^0.31.34",
     "@types/vue": "^2.0.0",
+    "css-loader": "^0.28.5",
     "live-server": "^1.2.0",
     "ts-loader": "^2.2.2",
     "typescript": "^2.4.1",
     "typings": "^2.1.1",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.2",
     "webpack": "^3.5.5"
   }
 }

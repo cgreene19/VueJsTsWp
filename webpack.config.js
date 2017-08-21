@@ -7,10 +7,18 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     module: {
-        loaders: [{
+        loaders: [ 
+        {
+            test: /\.vue$/,
+            loader: 'vue-loader'
+        },
+        {
             test: /\.ts$/,
-            loader: 'ts-loader'
-        }]
+            loader: 'ts-loader',
+            options: {
+                appendTsSuffixTo: [/\.vue$/],
+              }
+        },]
     },
     resolve: {
         extensions: ['.js', '.ts'],

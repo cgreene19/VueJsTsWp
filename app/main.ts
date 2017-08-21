@@ -1,16 +1,43 @@
 import Vue from "vue";
+import VueRouter from "vue-router";
+import details from "./components/details.vue";
 
-var app = new Vue({
-    el: '#app',
-    data: {
-        message: 'This is the main app entry point. Yes'
+// import UserView from './components/UserView.vue'
+
+
+Vue.component('item-nav', {
+    template: `<ul>
+        <li v-for="i in items ">{{i}}</li>    
+    </ul>`,
+    data: function () {
+        return {
+            items: ['Object', 'Array', 'Reflect', 'Proxy', 'Promise']
+        }
     }
+
 });
 
-// function greeter(person: string) {
-//     return "Sup G Dawg GGGGGGGGGGGG, " + person;
-// }
+Vue.use(VueRouter);
+const routes = [
+    { path: '/foo', component: details },
+    
+  ]
+  
+const router = new VueRouter({
+    routes // short for `routes: routes`
+  });
 
-// var user = "Jane User";
+//   const app = new Vue({
+//     el: '#app',
+//     data: {
+//         laung: 'js'
+//     }
+// });
 
-// document.body.innerHTML = greeter(user);
+const app = new Vue({
+    el: '#app',    
+    router,
+        data: {
+        laung: 'js'
+    }
+}).$mount();
