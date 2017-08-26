@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc -w | live-server | webpack --watch",
+    "start": "live-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
+    "webpack:watch" : "webpack --watch",
     "serve": "live-server",
     "build:dev": "webpack --progress",
     "postinstall": "typings install"

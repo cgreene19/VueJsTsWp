@@ -1,8 +1,10 @@
-<!-- app/components/details.vue -->
 <template>
     <div>
         <div>
-            <h2>{{msg}}</h2>
+            <h2>
+                {{msg}}
+                {{ $route.params.id }}
+            </h2>
         </div>
         <div>
             <router-view></router-view>
@@ -20,8 +22,8 @@ export default Vue.extend({
 
     }
 });
-Vue.component("UserProfile", {
+// Vue.component("UserProfile", {
 
-});
+// });
 </script>
 <style></style>
