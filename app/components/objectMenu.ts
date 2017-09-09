@@ -2,7 +2,7 @@ import Vue from "vue";
 //import router from "../main";
 
 export default Vue.component('item-nav', {
-    template: `<ul>  
+    template: `<ul class="obj-list">  
        <li v-for="item in items" v-on:click="navigate(item)">{{item}}</li>
     </ul>`,
     data: function () {

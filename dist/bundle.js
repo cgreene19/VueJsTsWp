@@ -13573,7 +13573,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -13593,8 +13593,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
         };
     }
 }));
-// Vue.component("UserProfile", {
-// });
 
 
 /***/ }),
@@ -13626,7 +13624,7 @@ if (false) {
 
 //import router from "../main";
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('item-nav', {
-    template: "<ul>  \n       <li v-for=\"item in items\" v-on:click=\"navigate(item)\">{{item}}</li>\n    </ul>",
+    template: "<ul class=\"obj-list\">  \n       <li v-for=\"item in items\" v-on:click=\"navigate(item)\">{{item}}</li>\n    </ul>",
     data: function () {
         return {
             items: ['Object', 'Array', 'Reflect', 'Proxy', 'Promise']

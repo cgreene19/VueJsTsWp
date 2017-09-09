@@ -16,12 +16,19 @@
     <div id="app">
 
         <div id="header">
-                <router-link to="/" tag="h1"><span>{{ laung }}</span>Browser</router-link>
-            
+            <router-link to="/" tag="h1"><span>{{ laung }}</span>Browser</router-link>
+        </div>
+        <div id="body">
+            <div class="side-nav">
+                <item-nav></item-nav>
+            </div>
+            <div class="content">
+                <router-view></router-view>
+            </div>
+
         </div>
 
-        <item-nav></item-nav>
-        <router-view></router-view>
+
 
     </div>
 

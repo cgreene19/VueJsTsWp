@@ -1,3 +1,5 @@
+
+
 #header{
     background-color: #ccc;
     padding: 4px 20px;
@@ -12,4 +14,28 @@
 }
 #header h1 span{
     font-size: 16px;
+}
+#body{
+ display:flex;
+ flex-direction: row;
+}
+.side-nav{
+    width: 200px;    
+    background-color: #f0f0f0;
+}
+.content{
+    background-color: #666;
+  flex-grow: 2;
+}
+.obj-list {
+    margin: 4px;
+}
+.obj-list li {
+    padding: 1px 6px;    
+    transition: all .5s;
+}
+
+.obj-list li:hover {
+    cursor: pointer;
+    background-color: white;
 }

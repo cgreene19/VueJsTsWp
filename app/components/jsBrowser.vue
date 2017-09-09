@@ -22,8 +22,6 @@ export default Vue.extend({
 
     }
 });
-// Vue.component("UserProfile", {
 
-// });
 </script>
 <style></style>
